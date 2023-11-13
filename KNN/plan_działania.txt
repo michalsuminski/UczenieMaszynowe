@@ -1,0 +1,17 @@
+1. wczytac zbior treningowy
+2. pogrupowac go po osobach (osobna klasyfikacja ze względu na osobe, bo ma ona inne preferencje)
+3. czyli będę miał tyle modeli knn ile jest osób
+4. zamienic każdy wiersz na wektor cech
+5. do 4 potrzebne jest zdefiniowanie miar podobieństwa/odległości między dwoma osobnikami
+6. chyba tam gdzie będę liczył np. podobieństwo stringów to muszę zrobić tak, że jeden wektor w 
+wartości cechy ma 0, a drugi wartość tej miary podobieństwa
+7. znormalizować wektor cech do 0-1
+8. dla każdej osoby zrobić grid search na parametr k
+9. otrzymam wtedy tyle modeli knn ile jest osób
+10. ze względu na osobę tworze klasyfikację
+
+edit:
+w sumie knn nie ma momentu uczenia, tylko odrazu klasyfikuje więc mogę przed każdym uczeniem 
+wywołać funkcję, która liczy podobieństwo między wszystkimi innymi elementami, dla podanego wektora
+
+normalizacja x-srednia/odchylenie_standardowe
