@@ -31,6 +31,9 @@ with open('json/production_companies.json', 'r', encoding='utf-8') as file:
 with open('json/production_countries.json', 'r', encoding='utf-8') as file:
     PRODUCTION_COUNTRIES = json.load(file)
 
+with open('json/person_similarity.json', 'r', encoding='utf-8') as file:
+    PERSON_SIMILARITY = json.load(file)
+
 # Read the CSV file into a DataFrame
 movie_df = pd.read_csv('csv/movie.csv', delimiter=";")
 
